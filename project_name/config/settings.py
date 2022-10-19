@@ -143,7 +143,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ####### 추가된 부분 #######
 
 # User를 django가 제공해주는 부분을 사용하지 않기 때문에 설정 필요
-AUTH_USER_MODEL = 'user.User' #user 앱의 User 모델 사용할 것.
+# AUTH_USER_MODEL = 'user.User' #user 앱의 User 모델 사용할 것.
 
 # login 이후 가야할 곳 지정
 LOGIN_REDIRECT_URL = '/'
