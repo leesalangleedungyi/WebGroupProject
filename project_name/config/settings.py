@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'project_name',
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -133,6 +135,7 @@ STATIC_URL = 'static/'
 # 프로젝트 내에서 공유할 static 폴더 경로 지정
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
@@ -143,14 +146,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ####### 추가된 부분 #######
 
 # User를 django가 제공해주는 부분을 사용하지 않기 때문에 설정 필요
-AUTH_USER_MODEL = 'user.User' #user 앱의 User 모델 사용할 것.
+#AUTH_USER_MODEL = 'user.User' #user 앱의 User 모델 사용할 것.
 
 # login 이후 가야할 곳 지정
-LOGIN_REDIRECT_URL = '/'
+#LOGIN_REDIRECT_URL = '/'
 
 # logout 이후 가야할 곳 지정
-LOGOUT_REDIRECT_URL = '/'
+#LOGOUT_REDIRECT_URL = '/'
 
 # 첨부파일 저장 위치
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-MEDIA_URL = '/media/'
+#MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+#MEDIA_URL = '/media/'
